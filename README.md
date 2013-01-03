@@ -19,7 +19,8 @@ as follows:
 
 Download
 =================
-Download an rpm built for CentOS 6 [here](http://static-01.andyspohn.com/rpm/centos/6/jenkins-rpm-build-1.0.noarch.rpm)
+Download [source](https://static-01.andyspohn.com/rpm/centos/6/jenkins-rpm-build-1.0.src.rpm) rpm
+or binary (noarch) rpm for [CentOS 6](http://static-01.andyspohn.com/rpm/centos/6/jenkins-rpm-build-1.0.noarch.rpm)
 
 
 Building
