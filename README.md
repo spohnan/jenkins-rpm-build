@@ -21,6 +21,10 @@ Building
 =================
 Clone this project into PROJECT_DIR
 
+    git clone https://github.com/spohnan/jenkins-rpm-build.git
+
+Build the RPM
+
     rpmbuild \
         --define "release `date +%Y%m%d%H%M%S`" \
         --define "_topdir $PROJECT_DIR/jenkins-rpm-build" \
