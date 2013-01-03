@@ -9,7 +9,7 @@ Usage
 Once this RPM has been built and installed on a Jenkins server you'd build RPM projects
 as follows:
 
-* Configure RPM source project SVN. If many RPMs are packaged into a single project consider
+* Configure RPM source project version control (svn/git). If many RPMs are packaged into a single project consider
   using the File System SCM plugin to create individual RPM builds from a single project checkout
 * Use the free-style software project to configure a new job to build the RPM project ensuring
   that the name of the Jenkins job is the same as the name of the rpm.
