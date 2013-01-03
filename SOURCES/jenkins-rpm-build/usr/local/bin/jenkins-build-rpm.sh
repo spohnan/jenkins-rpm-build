@@ -16,10 +16,10 @@ PROJECT_WORKSPACE="$JENKINS_HOME/jobs/$JOB_NAME/workspace"
 
 # Wipe out any previous artifacts so the archiving done per build
 # does not pick up previous build artifacts
-if ! -d $PROJECT_WORKSPACE/RPMS ; then
+if [ -d $PROJECT_WORKSPACE/RPMS ] ; then
     rm -fr $PROJECT_WORKSPACE/RPMS
 fi
-if ! -d $PROJECT_WORKSPACE/SRPMS ; then
+if [ -d $PROJECT_WORKSPACE/SRPMS ] ; then
     rm -fr $PROJECT_WORKSPACE/SRPMS
 fi
 
