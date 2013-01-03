@@ -10,8 +10,20 @@
 # scripts for each new job. Being able to just copy one task and change the name makes it much easier to set up quickly
 #
 
+# The undefined env vars are available within the jenkins runtime
+# environment where this script will be executed
+PROJECT_WORKSPACE="$JENKINS_HOME/jobs/$JOB_NAME/workspace"
+
+# Wipe out any previous artifacts so the archiving done per build
+# does not pick up previous build artifacts
+if ! -d $PROJECT_WORKSPACE/RPMS ; then
+    rm -fr $PROJECT_WORKSPACE/RPMS
+fi
+if ! -d $PROJECT_WORKSPACE/SRPMS ; then
+    rm -fr $PROJECT_WORKSPACE/SRPMS
+fi
 
 rpmbuild \
-    --define "_topdir $JENKINS_HOME/jobs/$JOB_NAME/workspace" \
+    --define "_topdir $PROJECT_WORKSPACE" \
     --define "release `date +%Y%m%d%H%M%S`" \
     -ba SPECS/$JOB_NAME.spec
