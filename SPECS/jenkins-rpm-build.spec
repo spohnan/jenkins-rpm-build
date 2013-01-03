@@ -13,7 +13,7 @@ BuildRoot: %{buildroot}
 Source:    https://github.com/spohnan/jenkins-rpm-build
 URL:       https://github.com/spohnan/jenkins-rpm-build
 License:   MIT
-requires:  rpm-build, rpmlint, rpmdevtools, createrepo, make, gcc, gcc-c++
+requires:  rpm-build, rpmlint, rpmdevtools, make, gcc, gcc-c++
 
 %description
 Additional utilities to facilitate building RPMs in Jenkins
