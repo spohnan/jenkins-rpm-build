@@ -17,6 +17,11 @@ as follows:
   the Execute shell option. In this command window you'd add the /usr/local/bin/jenkins-build-rpm.sh script
 
 
+Download
+=================
+Download an rpm built for CentOS 6 [here](http://static-01.andyspohn.com/rpm/centos/6/jenkins-rpm-build-1.0.noarch.rpm)
+
+
 Building
 =================
 Clone this project into PROJECT_DIR
