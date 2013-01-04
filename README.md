@@ -6,8 +6,11 @@ An RPM containing scripts to assist with configuring Jenkins RPM building projec
 
 Usage
 =================
-Once this RPM has been built and installed on a Jenkins server you'd build RPM projects
-as follows:
+As the name implies, this functionality is dependant on you having a RedHat/CentOS host with
+a running instance of Jenkins installed. This RPM lists the dependencies needed to build other
+RPMs, so once installed `yum install jenkins-rpm-build.rpm` your host will pick up all the needed tools.
+
+Once this RPM has been built and installed you'd build an RPM projects as follows:
 
 * Configure RPM source project version control (svn/git). If many RPMs are packaged into a single project consider
   using the File System SCM plugin to create individual RPM builds from a single project checkout
