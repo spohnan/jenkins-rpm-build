@@ -19,6 +19,7 @@ Once this RPM has been built and installed you'd build an RPM projects as follow
 * In the Build section of the job configuration screen, click the Add build step drop-down and choose
   the Execute shell option. In this command window you'd add the /usr/local/bin/jenkins-build-rpm.sh script
 
+See a more full featured example in the related [jenkins-rpm-publish.rpm](https://github.com/spohnan/jenkins-rpm-publish) project
 
 Download
 =================
